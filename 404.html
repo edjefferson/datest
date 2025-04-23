@@ -4,11 +4,9 @@
     <meta charset="utf-8">
     <title>Redirecting...</title>
     <script type="text/javascript">
-      var pathSegmentsToKeep = 0; // Set to 1 if site is at https://username.github.io/repo-name/
       var path = window.location.pathname;
-      var base = window.location.pathname.split('/').slice(0, pathSegmentsToKeep + 1).join('/') + '/';
-      
-      window.location.href = base + 'index.html?redirect=' + encodeURIComponent(path);
+      // For a repo at https://username.github.io/repo-name/
+      window.location.href = '/datest/index.html?redirect=' + encodeURIComponent(path);
     </script>
   </head>
   <body>
